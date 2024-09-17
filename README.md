@@ -1,4 +1,4 @@
-# Todo Application by Silvia Berescu
+# Todo Application 
 
 ## Overview
 
