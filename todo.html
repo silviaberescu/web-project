@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Todo</title>
+  </head>
+  <body>
+    <h2 id="title">todos</h2>
+    <section class="todo">
+      <div class="input">
+        <input
+          type="text"
+          class="input-field"
+          id="todoInput"
+          placeholder="What needs to be done?"
+        />
+        <button class="btn">Add</button>
+      </div>
+      <ul class="scroll">
+        <li id="todoList"></li>
+      </ul>
+      <div>
+        <hr class="counter" />
+        <div class="counter-container">
+          <p><span id="todoCount">0</span> items left</p>
+          <button id="Allbutton" onclick="toggleAllButton()">All</button>
+          <button id="Activebutton" onclick="toggleActiveButton()">Active</button>
+          <button id="Completedbutton" onclick="toggleCompletedButton()">Completed</button>
+          <button id="clearbutton" >Clear completed</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

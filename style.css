@@ -1,0 +1,193 @@
+body {
+  background: paleturquoise;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+  
+.btn {
+  display: none;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+  
+p {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+.todo {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: white;
+  padding: 24px;
+  width: 60%;
+  box-shadow: 0 16px 48px 16px rgba(0, 23, 71, 0.15);
+  max-width: 30rem;
+}
+  
+  
+#title {
+  position: absolute;
+  top: 8%;
+  left: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: darkcyan;
+  text-align: center;
+  font-size: 64px; 
+  font-family: Arial;
+}
+  
+.input {
+  position: relative;
+  display: flex;
+}
+  
+.input-field {
+  width: 100%;
+  border: 1px solid darkcyan;
+  padding: 20px;
+  font-size: 19.2px;
+}
+  
+input[type="text"]::placeholder {
+  color: gray;
+  font-style: italic;
+}
+  
+.todo-container {
+  display: flex;
+  gap: 16px;
+}
+  
+ul {
+  padding: 0;
+  margin: 0;
+}
+  
+li {
+  display: flex;
+  flex-direction: column;
+  gap: 19.2px;
+  padding: 20.8px;
+}
+  
+#todoList p {
+  display: flex;
+  gap: 16px;
+  color: black;
+  font-family: Arial;
+  align-items: center;
+}
+  
+#todoList .disabled {
+  color: #8f98a8;
+}
+  
+.disabled {
+  display: flex;
+  text-decoration: line-through;
+}
+  
+input[type="checkbox"] {
+  appearance: none;
+
+  cursor: pointer;
+}
+  
+input[type="checkbox"]::before {
+  content: "\2713";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  font-size: 27.2px;
+  text-align: center;
+  border: 1px solid grey;
+  border-radius: 50%;
+  color: transparent;
+}
+  
+input[type="checkbox"]:checked::before {
+  color: #00d8a7;
+  background-color: white;
+  border: 0.06rem solid #00d8a7;
+  border-radius: 50%;
+}
+  
+.counter {
+  border: 0.06rem solid lightgray;
+}
+  
+.counter-container {
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+  
+.counter-container p {
+  align-self: center;
+  font-family: Arial;
+}
+  
+.counter-container button {
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 16px;
+}
+
+#Activebutton:hover {
+  border: 2px solid darkcyan; 
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+#Activebutton.active {
+  border: 2px solid darkcyan;
+  box-shadow: 0 0 10px 5px lightblue;
+  border-radius: 10%;
+}
+
+#Allbutton:hover {
+  border: 2px solid darkcyan; 
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+#Allbutton.active {
+  border: 2px solid darkcyan;
+  box-shadow: 0 0 10px 5px lightblue;
+  border-radius: 10%;
+}
+
+#Completedbutton.active {
+  border: 2px solid darkcyan;
+  box-shadow: 0 0 10px 5px lightblue;
+  border-radius: 10%;
+}
+  
+#Completedbutton:hover {
+  border: 2px solid darkcyan;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+#clearbutton:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  display: none;
+}
